@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f5f0">
+  <meta name="description" content="نكسورا ماركت — متجر للأزياء والمنتجات المختارة بعناية.">
+  <title>نكسورا ماركت — أسلوبك، اختيارك</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header" id="home">
+    <a class="brand" href="#home" aria-label="نكسورا ماركت">
+      <img class="brand-logo" src="images/logo.png" alt="شعار نكسورا" data-alt-ar="شعار نكسورا" data-alt-fr="Logo Nexora">
+      <span class="brand-caption" data-ar="سوق الأناقة" data-fr="LE MARCHÉ DE LA MODE">سوق الأناقة</span>
+    </a>
+
+    <button class="menu-button" id="menu-button" type="button" aria-label="فتح القائمة" data-aria-ar="فتح القائمة" data-aria-fr="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="main-nav" id="main-nav" aria-label="القائمة الرئيسية" data-aria-ar="القائمة الرئيسية" data-aria-fr="Navigation principale">
+      <a href="#home" data-ar="الرئيسية" data-fr="Accueil">الرئيسية</a>
+      <a href="#categories" data-ar="الفئات" data-fr="Catégories">الفئات</a>
+      <a href="#new-arrivals" data-ar="وصل حديثاً" data-fr="Nouveautés">وصل حديثاً</a>
+      <a href="#popular-products" data-ar="الأكثر طلباً" data-fr="Populaires">الأكثر طلباً</a>
+      <a href="#all-products" data-ar="المنتجات" data-fr="Produits">المنتجات</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="language-button" id="language-button" type="button">Français</button>
+      <button class="cart-button" id="cart-button" type="button" aria-label="عرض السلة" data-aria-ar="عرض السلة" data-aria-fr="Afficher le panier">
+        <span class="cart-icon" aria-hidden="true">▱</span>
+        <span data-ar="السلة" data-fr="Panier">السلة</span>
+        <span class="cart-count" id="cart-count">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <img class="hero-image" src="images/banner.jpg" alt="تشكيلة نكسورا ماركت الجديدة" data-alt-ar="تشكيلة نكسورا ماركت الجديدة" data-alt-fr="Nouvelle collection Nexora Market">
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow" data-ar="اختيارات أنيقة لكل يوم" data-fr="DES PIÈCES POUR CHAQUE JOUR">اختيارات أنيقة لكل يوم</p>
+        <h1 id="hero-title" data-ar="أسلوبك،<br>اختيارك." data-fr="Votre style,<br>votre choix.">أسلوبك،<br>اختيارك.</h1>
+        <p class="hero-description" data-ar="اكتشفوا تشكيلة متنوعة من الأزياء<br>والقطع المختارة بعناية." data-fr="Découvrez une sélection de vêtements<br>et de pièces choisies avec soin.">اكتشفوا تشكيلة متنوعة من الأزياء<br>والقطع المختارة بعناية.</p>
+        <a class="button button-light" href="#all-products">
+          <span data-ar="تسوقوا التشكيلة" data-fr="Découvrir la collection">تسوقوا التشكيلة</span>
+          <span aria-hidden="true">←</span>
+        </a>
+      </div>
+      <span class="hero-index">NEXORA MARKET&nbsp; / &nbsp;2026</span>
+    </section>
+
+    <section class="categories section-wrap" id="categories">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow" data-ar="اكتشفوا ما يناسبكم" data-fr="TROUVEZ VOTRE STYLE">اكتشفوا ما يناسبكم</p>
+          <h2 data-ar="تسوقوا حسب الفئة" data-fr="Nos catégories">تسوقوا حسب الفئة</h2>
+        </div>
+        <a class="text-link" href="#all-products" data-ar="كل المنتجات ←" data-fr="Tous les produits →">كل المنتجات ←</a>
+      </div>
+      <div class="category-grid">
+        <button class="category-card" type="button" data-category-link="clothing">
+          <img src="images/category1.jpg" alt="ملابس وأزياء" data-alt-ar="ملابس وأزياء" data-alt-fr="Vêtements et mode" loading="lazy">
+          <span class="category-number">01</span>
+          <span class="category-name" data-ar="الأزياء" data-fr="Vêtements">الأزياء</span>
+          <span class="category-arrow" aria-hidden="true">↙</span>
+        </button>
+        <button class="category-card" type="button" data-category-link="shoes">
+          <img src="images/category2.jpg" alt="أحذية" data-alt-ar="أحذية" data-alt-fr="Chaussures" loading="lazy">
+          <span class="category-number">02</span>
+          <span class="category-name" data-ar="الأحذية" data-fr="Chaussures">الأحذية</span>
+          <span class="category-arrow" aria-hidden="true">↙</span>
+        </button>
+        <button class="category-card" type="button" data-category-link="accessories">
+          <img src="images/category3.jpg" alt="حقائب وإكسسوارات" data-alt-ar="حقائب وإكسسوارات" data-alt-fr="Sacs et accessoires" loading="lazy">
+          <span class="category-number">03</span>
+          <span class="category-name" data-ar="الحقائب والإكسسوارات" data-fr="Sacs & accessoires">الحقائب والإكسسوارات</span>
+          <span class="category-arrow" aria-hidden="true">↙</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="featured-section section-wrap" id="new-arrivals">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow" data-ar="اختيرت لكم هذا الأسبوع" data-fr="CHOISIS CETTE SEMAINE">اختيرت لكم هذا الأسبوع</p>
+          <h2 data-ar="وصل حديثاً" data-fr="Nouveautés">وصل حديثاً</h2>
+        </div>
+        <a class="text-link" href="#all-products" data-ar="اكتشفوا المزيد ←" data-fr="Tout découvrir →">اكتشفوا المزيد ←</a>
+      </div>
+      <div class="product-grid feature-grid" id="new-products"></div>
+    </section>
+
+    <section class="promo-banner" id="promotions">
+      <div class="promo-copy">
+        <p class="eyebrow" data-ar="اختيارات الموسم" data-fr="SÉLECTION DE SAISON">اختيارات الموسم</p>
+        <h2 data-ar="قطع مميزة<br>بأسعار أجمل." data-fr="Des pièces choisies,<br>à prix doux.">قطع مميزة<br>بأسعار أجمل.</h2>
+        <p data-ar="اكتشفوا العروض على تشكيلة مختارة." data-fr="Découvrez nos offres sur une sélection de pièces.">اكتشفوا العروض على تشكيلة مختارة.</p>
+        <a class="button button-dark" href="#sale-products">
+          <span data-ar="اكتشفوا العروض" data-fr="Voir les offres">اكتشفوا العروض</span>
+          <span aria-hidden="true">←</span>
+        </a>
+      </div>
+      <div class="promo-mark" aria-hidden="true">N.</div>
+    </section>
+
+    <section class="featured-section section-wrap" id="popular-products">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow" data-ar="الأكثر اختياراً" data-fr="LES PLUS APPRÉCIÉS">الأكثر اختياراً</p>
+          <h2 data-ar="الأكثر طلباً" data-fr="Les populaires">الأكثر طلباً</h2>
+        </div>
+        <a class="text-link" href="#all-products" data-ar="كل المنتجات ←" data-fr="Tous les produits →">كل المنتجات ←</a>
+      </div>
+      <div class="product-grid feature-grid" id="popular-grid"></div>
+    </section>
+
+    <section class="featured-section section-wrap sale-section" id="sale-products">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow" data-ar="لفترة محدودة" data-fr="POUR UNE DURÉE LIMITÉE">لفترة محدودة</p>
+          <h2 data-ar="عروض مختارة" data-fr="Offres choisies">عروض مختارة</h2>
+        </div>
+        <a class="text-link" href="#all-products" data-ar="تسوقوا الآن ←" data-fr="En profiter →">تسوقوا الآن ←</a>
+      </div>
+      <div class="product-grid feature-grid" id="sale-grid"></div>
+    </section>
+
+    <section class="catalog section-wrap" id="all-products">
+      <div class="section-heading catalog-heading">
+        <div>
+          <p class="eyebrow" data-ar="تشكيلة نكسورا" data-fr="LA SÉLECTION NEXORA">تشكيلة نكسورا</p>
+          <h2 data-ar="كل المنتجات" data-fr="Tous les produits">كل المنتجات</h2>
+        </div>
+        <label class="search-box">
+          <span class="search-symbol" aria-hidden="true">⌕</span>
+          <input id="search-input" type="search" placeholder="ابحثوا عن منتج..." data-placeholder-ar="ابحثوا عن منتج..." data-placeholder-fr="Rechercher un produit..." aria-label="ابحثوا عن منتج">
+        </label>
+      </div>
+
+      <div class="filter-row" aria-label="تصفية حسب الفئة" data-aria-ar="تصفية حسب الفئة" data-aria-fr="Filtrer par catégorie">
+        <button class="filter-button is-active" type="button" data-filter="all" data-ar="الكل" data-fr="Tout">الكل</button>
+        <button class="filter-button" type="button" data-filter="clothing" data-ar="الأزياء" data-fr="Vêtements">الأزياء</button>
+        <button class="filter-button" type="button" data-filter="draara" data-ar="الدراعات" data-fr="Draâras">الدراعات</button>
+        <button class="filter-button" type="button" data-filter="melhfa" data-ar="الملاحف" data-fr="Melhfas">الملاحف</button>
+        <button class="filter-button" type="button" data-filter="shoes" data-ar="الأحذية" data-fr="Chaussures">الأحذية</button>
+        <button class="filter-button" type="button" data-filter="bags" data-ar="الحقائب" data-fr="Sacs">الحقائب</button>
+        <button class="filter-button" type="button" data-filter="accessories" data-ar="الإكسسوارات" data-fr="Accessoires">الإكسسوارات</button>
+      </div>
+      <p class="result-count" id="result-count" aria-live="polite"></p>
+
+      <div class="product-grid catalog-grid" id="product-list">
+        <article class="product-card" data-product-id="p1" data-category="draara clothing" data-name-ar="دراعة الصحراء" data-name-fr="Draâra du désert" data-price="2800" data-description-ar="دراعة أنيقة بتفاصيل مستوحاة من التراث الموريتاني، مناسبة للمناسبات والإطلالات اليومية." data-description-fr="Une draâra élégante inspirée du patrimoine mauritanien, pour les grandes occasions comme pour le quotidien." data-new="true" data-popular="true" data-sale="false">
+          <div class="product-image-wrap"><img src="images/product1.jpg" alt="دراعة الصحراء" data-alt-ar="دراعة الصحراء" data-alt-fr="Draâra du désert" loading="lazy"><span class="product-badge" data-ar="جديد" data-fr="Nouveau">جديد</span></div>
+          <div class="product-card-info"><p class="product-category" data-ar="دراعات" data-fr="Draâras">دراعات</p><h3 data-ar="دراعة الصحراء" data-fr="Draâra du désert">دراعة الصحراء</h3><p class="product-description" data-ar="قماش ناعم · بيج" data-fr="Tissu doux · Beige">قماش ناعم · بيج</p><div class="product-card-bottom"><strong class="product-price" data-price="2800">٢٬٨٠٠ أوقية</strong><button class="view-button" type="button" data-view data-ar="التفاصيل" data-fr="Détails">التفاصيل</button></div><button class="add-button" type="button" data-add data-ar="أضيفوا إلى السلة" data-fr="Ajouter au panier">أضيفوا إلى السلة</button></div>
+        </article>
+        <article class="product-card" data-product-id="p2" data-category="melhfa clothing" data-name-ar="ملحفة الرمال" data-name-fr="Melhfa des sables" data-price="1900" data-description-ar="ملحفة خفيفة بألوان دافئة ولمسة انسيابية مريحة." data-description-fr="Une melhfa légère aux couleurs chaudes, fluide et agréable à porter." data-new="true" data-popular="false" data-sale="true">
+          <div class="product-image-wrap"><img src="images/product2.jpg" alt="ملحفة " data-alt-ar="ملحفة الرمال" data-alt-fr="Melhfa des sables" loading="lazy"><span class="product-badge sale-badge" data-ar="عرض خاص" data-fr="Offre">عرض خاص</span></div>
+          <div class="product-card-info"><p class="product-category" data-ar="ملاحف" data-fr="Melhfas">ملاحف</p><h3 data-ar="ملحفة الرمال" data-fr="Melhfa des sables">ملحفة الرمال</h3><p class="product-description" data-ar="وشاح خفيف · رملي" data-fr="Voile léger · Sable">وشاح خفيف · رملي</p><div class="product-card-bottom"><strong class="product-price" data-price="1900">١٬٩٠٠ أوقية</strong><button class="view-button" type="button" data-view data-ar="التفاصيل" data-fr="Détails">التفاصيل</button></div><button class="add-button" type="button" data-add data-ar="أضيفوا إلى السلة" data-fr="Ajouter au panier">أضيفوا إلى السلة</button></div>
+        </article>
+        <article class="product-card" data-product-id="p3" data-category="shoes" data-name-ar="حذاء يومي أنيق" data-name-fr="Chaussures de ville" data-price="3200" data-description-ar="حذاء مريح بتصميم بسيط يناسب إطلالاتكم اليومية." data-description-fr="Des chaussures confortables au design sobre, faciles à porter chaque jour." data-new="false" data-popular="true" data-sale="false">
+          <div class="product-image-wrap"><img src="images/product3.jpg" alt="حذاء يومي أنيق" data-alt-ar="حذاء يومي أنيق" data-alt-fr="Chaussures de ville" loading="lazy"><span class="product-badge" data-ar="الأكثر طلباً" data-fr="Populaire">الأكثر طلباً</span></div>
+          <div class="product-card-info"><p class="product-category" data-ar="أحذية" data-fr="Chaussures">أحذية</p><h3 data-ar="حذاء يومي أنيق" data-fr="Chaussures de ville">حذاء يومي أنيق</h3><p class="product-description" data-ar="جلد ناعم · أسود" data-fr="Cuir souple · Noir">جلد ناعم · أسود</p><div class="product-card-bottom"><strong class="product-price" data-price="3200">٣٬٢٠٠ أوقية</strong><button class="view-button" type="button" data-view data-ar="التفاصيل" data-fr="Détails">التفاصيل</button></div><button class="add-button" type="button" data-add data-ar="أضيفوا إلى السلة" data-fr="Ajouter au panier">أضيفوا إلى السلة</button></div>
+        </article>
+        <article class="product-card" data-product-id="p4" data-category="bags accessories" data-name-ar="حقيبة المدينة" data-name-fr="Sac citadin" data-price="2600" data-description-ar="حقيبة عملية بتصميم أنيق ومساحة مناسبة للاستخدام اليومي." data-description-fr="Un sac pratique et élégant, avec un format idéal pour le quotidien." data-new="true" data-popular="true" data-sale="false">
+          <div class="product-image-wrap"><img src="images/product4.jpg" alt="حقيبة " data-alt-ar="حقيبة المدينة" data-alt-fr="Sac citadin" loading="lazy"><span class="product-badge" data-ar="جديد" data-fr="Nouveau">جديد</span></div>
+          <div class="product-card-info"><p class="product-category" data-ar="حقائب" data-fr="Sacs">حقائب</p><h3 data-ar="حقيبة المدينة" data-fr="Sac citadin">حقيبة </h3><p class="product-description" data-ar="تصميم عملي · بني" data-fr="Design pratique · Marron">تصميم عملي · بني</p><div class="product-card-bottom"><strong class="product-price" data-price="2600">٢٬٦٠٠ أوقية</strong><button class="view-button" type="button" data-view data-ar="التفاصيل" data-fr="Détails">التفاصيل</button></div><button class="add-button" type="button" data-add data-ar="أضيفوا إلى السلة" data-fr="Ajouter au panier">أضيفوا إلى السلة</button></div>
+        </article>
+        <article class="product-card" data-product-id="p5" data-category="shoes" data-name-ar="صندل من الجلد" data-name-fr="Sandales en cuir" data-price="2100" data-description-ar="صندل جلدي بخطوط بسيطة وخامة مريحة." data-description-fr="Des sandales en cuir aux lignes épurées et à la matière confortable." data-new="false" data-popular="true" data-sale="false">
+          <div class="product-image-wrap"><img src="images/product5.jpg" alt="صندل من الجلد" data-alt-ar="صندل من الجلد" data-alt-fr="Sandales en cuir" loading="lazy"><span class="product-badge" data-ar="اختياركم" data-fr="Favori">اختياركم</span></div>
+          <div class="product-card-info"><p class="product-category" data-ar="أحذية" data-fr="Chaussures">أحذية</p><h3 data-ar="صندل من الجلد" data-fr="Sandales en cuir">صندل من الجلد</h3><p class="product-description" data-ar="جلد طبيعي · كراميل" data-fr="Cuir naturel · Caramel">جلد طبيعي · كراميل</p><div class="product-card-bottom"><strong class="product-price" data-price="2100">٢٬١٠٠ أوقية</strong><button class="view-button" type="button" data-view data-ar="التفاصيل" data-fr="Détails">التفاصيل</button></div><button class="add-button" type="button" data-add data-ar="أضيفوا إلى السلة" data-fr="Ajouter au panier">أضيفوا إلى السلة</button></div>
+        </article>
+        <article class="product-card" data-product-id="p6" data-category="melhfa clothing" data-name-ar="ملحفة نسيم" data-name-fr="Melhfa brise" data-price="2300" data-description-ar="ملحفة مريحة بألوان هادئة، مصممة لإطلالة سهلة وأنيقة." data-description-fr="Une melhfa confortable aux tons doux, pour une allure simple et élégante." data-new="true" data-popular="false" data-sale="false">
+          <div class="product-image-wrap"><img src="images/product6.jpg" alt="ملحفة نسيم" data-alt-ar="ملحفة نسيم" data-alt-fr="Melhfa brise" loading="lazy"><span class="product-badge" data-ar="جديد" data-fr="Nouveau">جديد</span></div>
+          <div class="product-card-info"><p class="product-category" data-ar="ملاحف" data-fr="Melhfas">ملاحف</p><h3 data-ar="ملحفة نسيم" data-fr="Melhfa brise">ملحفة نسيم</h3><p class="product-description" data-ar="قماش خفيف · أزرق" data-fr="Tissu léger · Bleu">قماش خفيف · أزرق</p><div class="product-card-bottom"><strong class="product-price" data-price="2300">٢٬٣٠٠ أوقية</strong><button class="view-button" type="button" data-view data-ar="التفاصيل" data-fr="Détails">التفاصيل</button></div><button class="add-button" type="button" data-add data-ar="أضيفوا إلى السلة" data-fr="Ajouter au panier">أضيفوا إلى السلة</button></div>
+        </article>
+        <article class="product-card" data-product-id="p7" data-category="accessories" data-name-ar="ساعة كلاسيكية" data-name-fr="Montre classique" data-price="3500" data-description-ar="ساعة بتصميم كلاسيكي تضيف لمسة أنيقة إلى إطلالتكم." data-description-fr="Une montre classique pour compléter vos tenues avec élégance." data-new="false" data-popular="false" data-sale="true">
+          <div class="product-image-wrap"><img src="images/product7.jpg" alt="ساعة كلاسيكية" data-alt-ar="ساعة كلاسيكية" data-alt-fr="Montre classique" loading="lazy"><span class="product-badge sale-badge" data-ar="عرض خاص" data-fr="Offre">عرض خاص</span></div>
+          <div class="product-card-info"><p class="product-category" data-ar="إكسسوارات" data-fr="Accessoires">إكسسوارات</p><h3 data-ar="ساعة كلاسيكية" data-fr="Montre classique">ساعة كلاسيكية</h3><p class="product-description" data-ar="تصميم أنيق · ذهبي" data-fr="Style élégant · Doré">تصميم أنيق · ذهبي</p><div class="product-card-bottom"><strong class="product-price" data-price="3500">٣٬٥٠٠ أوقية</strong><button class="view-button" type="button" data-view data-ar="التفاصيل" data-fr="Détails">التفاصيل</button></div><button class="add-button" type="button" data-add data-ar="أضيفوا إلى السلة" data-fr="Ajouter au panier">أضيفوا إلى السلة</button></div>
+        </article>
+        <article class="product-card" data-product-id="p8" data-category="draara clothing" data-name-ar="دراعة عصرية" data-name-fr="Draâra contemporaine" data-price="3000" data-description-ar="تصميم عصري بروح موريتانية، بقماش ناعم وتفاصيل بسيطة." data-description-fr="Une draâra contemporaine au caractère mauritanien, dans un tissu doux et des finitions simples." data-new="true" data-popular="false" data-sale="false">
+          <div class="product-image-wrap"><img src="images/product8.jpg" alt="دراعة عصرية" data-alt-ar="دراعة عصرية" data-alt-fr="Draâra contemporaine" loading="lazy"><span class="product-badge" data-ar="جديد" data-fr="Nouveau">جديد</span></div>
+          <div class="product-card-info"><p class="product-category" data-ar="دراعات" data-fr="Draâras">دراعات</p><h3 data-ar="دراعة عصرية" data-fr="Draâra contemporaine">دراعة عصرية</h3><p class="product-description" data-ar="قماش ناعم · رمادي" data-fr="Tissu doux · Gris">قماش ناعم · رمادي</p><div class="product-card-bottom"><strong class="product-price" data-price="3000">٣٬٠٠٠ أوقية</strong><button class="view-button" type="button" data-view data-ar="التفاصيل" data-fr="Détails">التفاصيل</button></div><button class="add-button" type="button" data-add data-ar="أضيفوا إلى السلة" data-fr="Ajouter au panier">أضيفوا إلى السلة</button></div>
+        </article>
+      </div>
+      <p class="empty-results" id="empty-results" hidden data-ar="لا توجد منتجات مطابقة لبحثكم." data-fr="Aucun produit ne correspond à votre recherche.">لا توجد منتجات مطابقة لبحثكم.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="#home"><img class="brand-logo" src="images/logo.png" alt="شعار نكسورا" data-alt-ar="شعار نكسورا" data-alt-fr="Logo Nexora"><span class="brand-caption" data-ar="سوق الأناقة" data-fr="LE MARCHÉ DE LA MODE">سوق الأناقة</span></a>
+    <p data-ar="اختيارات متنوعة، وأناقة تناسبكم." data-fr="Une sélection variée, un style qui vous ressemble.">اختيارات متنوعة، وأناقة تناسبكم.</p>
+    <span class="copyright">© 2026 NEXORA MARKET</span>
+  </footer>
+
+  <div class="page-shade" id="page-shade" hidden></div>
+  <aside class="cart-panel" id="cart-panel" aria-hidden="true">
+    <div class="panel-heading">
+      <div><p class="eyebrow" data-ar="اختياراتكم" data-fr="VOTRE SÉLECTION">اختياراتكم</p><h2 data-ar="سلة التسوق" data-fr="Votre panier">سلة التسوق</h2></div>
+      <button class="close-button" id="close-cart" type="button" aria-label="إغلاق السلة" data-aria-ar="إغلاق السلة" data-aria-fr="Fermer le panier">×</button>
+    </div>
+    <p class="cart-empty" id="cart-empty" data-ar="سلتكم فارغة حالياً." data-fr="Votre panier est vide pour le moment.">سلتكم فارغة حالياً.</p>
+    <div class="cart-items" id="cart-items"></div>
+    <div class="cart-footer">
+      <p><span data-ar="المجموع" data-fr="Total">المجموع</span><strong id="cart-total">0 أوقية</strong></p>
+      <button class="checkout-button" id="checkout-button" type="button" data-ar="متابعة التسوق" data-fr="Continuer mes achats">متابعة التسوق</button>
+      <small data-ar="نموذج تجريبي — لا يتم إرسال طلب حقيقي." data-fr="Démonstration — aucune commande réelle n'est envoyée.">نموذج تجريبي — لا يتم إرسال طلب حقيقي.</small>
+    </div>
+  </aside>
+
+  <div class="product-modal" id="product-modal" hidden>
+    <section class="product-modal-content" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="close-button modal-close" id="close-modal" type="button" aria-label="إغلاق" data-aria-ar="إغلاق" data-aria-fr="Fermer">×</button>
+      <img class="modal-image" id="modal-image" src="images/product1.jpg" alt="">
+      <div class="modal-copy">
+        <p class="product-category" id="modal-category"></p>
+        <h2 id="modal-title"></h2>
+        <p id="modal-description"></p>
+        <strong class="product-price" id="modal-price"></strong>
+        <button class="add-button" id="modal-add" type="button" data-ar="أضيفوا إلى السلة" data-fr="Ajouter au panier">أضيفوا إلى السلة</button>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
